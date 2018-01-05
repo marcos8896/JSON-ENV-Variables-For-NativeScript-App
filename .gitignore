@@ -1,0 +1,5 @@
+platforms
+node_modules
+app/config.json
+.DS_Store
+config
