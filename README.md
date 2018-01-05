@@ -1,2 +1,4 @@
-# JSON-ENV-Variables-For-NativeScript-App
-A NativeScript app with enviroment variables based on JSON Files.
+# JSON ENV Variables For A NativeScript App
+
+* This example was generated based on the following post: [BUILDING A MOBILE NATIVESCRIPT APPLICATION FOR MULTIPLE ENVIRONMENTS](https://blog.davincisoftware.sk/building-a-mobile-nativescript-app) by Martin Mitro.
+
