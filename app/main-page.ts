@@ -19,7 +19,9 @@ export function navigatingTo(args: EventData) {
     */
     let page = <Page>args.object;
     
+    console.log("----------------------")
     console.log(JSON.stringify(config));
+    console.log("----------------------")
     /*
     A page’s bindingContext is an object that should be used to perform
     data binding between XML markup and TypeScript code. Properties

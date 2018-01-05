@@ -10,14 +10,14 @@
     },
     "hooks": [
       {
-        "type": "after-prepare",
-        "script": "after-prepare.js"
+        "type": "before-prepare",
+        "script": "before-prepare.js"
       }
     ]
   },
   "scripts": {
-    "run-dev-ios": "npm run clean && rm -r app/config && cross-env BUILD_PROFILE=dev tns run ios ",
-    "run-prod-ios": "npm run clean && rm -r app/config && cross-env BUILD_PROFILE=prod tns run ios",
+    "run-dev-ios": "cross-env BUILD_PROFILE=dev tns run ios --clean",
+    "run-prod-ios": "cross-env BUILD_PROFILE=prod tns run ios --clean",
     "build-prod-ios": "cross-env BUILD_PROFILE=prod tns build ios --clean"
   },
   "dependencies": {

@@ -5,7 +5,7 @@ var mkdirp = require('mkdirp');
 module.exports = function ( logger, projectData, usbLiveSyncService ) { 
     console.log("------------------------------");
     console.log("------------------------------");
-    console.log("on prepare-config");
+    console.log("On prepare-config");
     console.log("------------------------------");
     console.log("------------------------------");
     var readStream = null; 
@@ -16,7 +16,7 @@ module.exports = function ( logger, projectData, usbLiveSyncService ) {
 
       console.log("------------------------------");
       console.log("------------------------------");
-      console.log("on rejectCleanup ERROR");
+      console.log("On rejectCleanup ERROR");
       console.log("------------------------------");
       console.log("------------------------------");
 
@@ -42,10 +42,10 @@ module.exports = function ( logger, projectData, usbLiveSyncService ) {
         writeStream.on( 'error', rejectCleanup ); 
         writeStream.on( 'finish', function () { 
             if ( !hasError ) {
-                console.log("all good on finish.");
+                console.log("All good on Finish.");
                 resolve(); 
             } else {
-              console.log("There was an error on finish.");
+              console.log("There was an error on Finish.");
               
             }
         }); 
